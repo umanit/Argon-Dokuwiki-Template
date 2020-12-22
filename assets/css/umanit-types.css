@@ -1,0 +1,82 @@
+/*=========== Headings  ==========*/
+
+#dokuwiki__content h1, #dokuwiki__content h2, #dokuwiki__content h3, #dokuwiki__content h4, #dokuwiki__content h5, #dokuwiki__content h6 {
+  color: var(--blue);
+}
+
+#dokuwiki__content h1 {
+  border-bottom: 5px solid var(--yellow);
+}
+
+#dokuwiki__content h2, #dokuwiki__content h3, #dokuwiki__content h4, #dokuwiki__content h5, #dokuwiki__content h6 {
+  position: relative;
+}
+
+#dokuwiki__content h2:before,
+#dokuwiki__content h3::before,
+#dokuwiki__content h4::before,
+#dokuwiki__content h5::before,
+#dokuwiki__content h6::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  margin-top: initial;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--yellow);
+  visibility: visible;
+}
+
+#dokuwiki__content h2 {
+  padding-left: 25px;
+}
+
+#dokuwiki__content h2:before {
+  width: 15px;
+  height: 15px;
+}
+
+#dokuwiki__content h3 {
+  padding-left: 20px;
+  margin-left: 15px;
+}
+
+#dokuwiki__content h3:before {
+  width: 10px;
+  height: 10px;
+}
+
+#dokuwiki__content h4 {
+  padding-left: 15px;
+  margin-left: 30px;
+}
+
+#dokuwiki__content h4:before {
+  width: 8px;
+  height: 8px;
+}
+
+#dokuwiki__content h5 {
+  padding-left: 15px;
+  margin-left: 45px;
+}
+
+#dokuwiki__content h5:before {
+  width: 8px;
+  height: 8px;
+}
+
+#dokuwiki__content h6 {
+  padding-left: 15px;
+  margin-left: 60px;
+}
+
+#dokuwiki__content h6:before {
+  width: 7px;
+  height: 7px;
+}
+
+a:visited, a:link {
+  color: var(--navy);
+}

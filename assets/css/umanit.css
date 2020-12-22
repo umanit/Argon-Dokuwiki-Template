@@ -1,0 +1,349 @@
+/*
+=========================================================
+*  Argon Dokuwiki Template
+*  Based on the Argon Design System by Creative Tim
+*  Ported to Dokuwiki by Anchit (@IceWreck)
+=========================================================
+*/
+/*
+* I know using important at multiple places is a bad thing, but
+* I need to overrule the css already provided by dokuwiki
+*/
+@import url(argon-design-system.css);
+@import url(umanit-colors.css);
+@import url(umanit-dokuwiki-content.css);
+@import url(umanit-titles.css);
+@import url(umanit-forms.css);
+@import url(umanit-types.css);
+@import url(umanit-sidebar.css);
+@import url(umanit-footer.css);
+
+
+::-moz-selection {
+  text-shadow: none;
+  background: #dfe2f1;
+}
+
+::selection {
+  text-shadow: none;
+  background: #dfe2f1;
+}
+
+.breadcrumb {
+  flex-direction: column;
+}
+
+.argon-doku-page-menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.argon-doku-page-menu li {
+  display: inline;
+  fill: #6c757d;
+}
+
+.argon-doku-page-menu li :hover {
+  fill: var(--grey-dark);
+}
+
+.argon-doku-page-menu li:nth-of-type(1) {
+  margin-left: 0em;
+}
+
+#tool__bar button {
+  margin-bottom: 2em;
+}
+
+textarea {
+  width: 95% !important;
+  max-width: 100% !important;
+}
+
+.editBar .summary {
+  display: block !important;
+}
+
+.ct-toc #dw__toc {
+  float: inherit;
+  margin: inherit;
+  width: inherit;
+  background-color: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  margin-right: 0em;
+  padding-left: 0;
+  border-left: 1px solid #eee;
+}
+
+.ct-toc #dw__toc h3 {
+  display: none;
+}
+
+.ct-toc #dw__toc a {
+  display: block;
+  padding: .125rem 1rem;
+  color: #99979c;
+  font-size: 100%;
+}
+
+.ct-toc #dw__toc a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.ct-toc #dw__toc ol,
+.ct-toc #dw__toc ul,
+.ct-toc #dw__toc dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.ct-toc #dw__toc ul {
+  margin-bottom: 0.5rem;
+}
+
+.ct-toc #dw__toc ul {
+  list-style: disc outside;
+  list-style-position: outside;
+  list-style-image: none;
+  list-style-type: disc;
+}
+
+.header-title a,
+.header-title a:active {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.header-title a:hover,
+.header-title a:focus {
+  color: var(--light-yellow) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.argon-doku-navbar-icon {
+  fill: white;
+}
+
+.argon-doku-navbar-icon :hover {
+  fill: #e6e6e6;
+}
+
+.doku_form .no {
+  margin: 0rem !important;
+  height: initial;
+  padding: 0rem;
+}
+
+.doku_form .no #qsearch__in {
+  width: 10rem;
+  height: 1.5rem;
+  margin: 0rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 0.25rem !important;
+  overflow: hidden;
+  border: none;
+}
+
+.doku_form .no button {
+  margin: 0rem;
+  overflow: hidden;
+  height: 92%;
+}
+
+.search-results-form button {
+  margin-left: 3rem;
+}
+
+.search-results-form .toggleAssistant {
+  display: block;
+  float: none !important;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.search-results-form fieldset input {
+  display: inline-block;
+}
+
+.dokuwiki .ui-admin ul li {
+  list-style-type: none;
+}
+
+.dokuwiki .ui-admin ul .admin_tasks svg {
+  margin-right: 1rem;
+  width: 1px;
+  height: 1px;
+}
+
+.dokuwiki .tabs li {
+  list-style-type: disclosure-closed;
+}
+
+.dokuwiki div.ui-admin ul li {
+  margin: 0rem;
+  vertical-align: middle !important;
+}
+
+.dokuwiki div.ui-admin ul li a {
+  vertical-align: middle;
+}
+
+.dokuwiki div.ui-admin ul li a span.icon {
+
+}
+
+.dokuwiki div.ui-admin ul li a span.icon svg {
+  margin-right: 1rem;
+  width: auto;
+  height: 0.5em;
+  vertical-align: middle !important;
+}
+
+
+
+.dokuwiki div.ui-admin ul li a span.icon svg path {
+  fill: #32325d;
+}
+
+.dokuwiki div.ui-admin ul li a span.prompt {
+  font-size: 1rem;
+  font-weight: normal;
+  vertical-align: middle !important;
+}
+
+#config__manager td input.edit {
+  width: 30em;
+  padding: 0.0rem 0.75rem;
+  background-color: white !important;
+}
+
+#config__manager tr.default .input,
+#config__manager tr.default input,
+#config__manager tr.default textarea,
+#config__manager tr.default select,
+#config__manager .selectiondefault {
+  background-color: inherit;
+}
+
+.dokuwiki #dw__register fieldset,
+#dw__profiledelete fieldset {
+  width: 100%;
+  border: 0rem;
+  padding: 0rem;
+  text-align: left !important;
+}
+
+.dokuwiki #dw__register fieldset legend,
+#dw__profiledelete fieldset legend {
+  font-style: normal;
+}
+
+.dokuwiki #dw__register fieldset label,
+#dw__profiledelete fieldset label {
+  font-size: 1rem;
+  font-weight: normal;
+  width: 95%;
+  text-align: left !important;
+}
+
+.dokuwiki #dw__register fieldset label input,
+#dw__profiledelete fieldset label input {
+  float: right;
+  background-color: white !important;
+  border-radius: 0.25rem;
+  border-color: #99979c;
+  border-width: thin;
+}
+
+.dokuwiki #dw__register label.block,
+#dw__profiledelete label.block {
+  display: inline-block !important;
+}
+
+#dw__login {
+  width: 100%;
+  float: left;
+  left: 0%;
+  margin: 0%;
+}
+
+#dw__login label {
+  width: 90%;
+}
+
+#dw__login span {
+  float: left;
+  font-size: 1.15rem;
+}
+
+#dw__login input {
+  display: block;
+  float: right;
+  width: 90%;
+  height: 1.15rem;
+  top: 50%;
+}
+
+#dw__login .simple {
+  width: 50%;
+  margin-left: unset !important;
+}
+
+#dw__login #remember__me {
+  margin-top: 1rem;
+}
+
+
+
+.breadcrumb {
+   display: none;
+}
+
+
+
+
+.bg-primary {
+  background-color: var(--blue) !important;
+}
+
+button {
+  border: none;
+}
+
+button:hover,
+button:focus{
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+button:not(.toolbutton):not(.pickerbutton) {
+  background-color: var(--blue);
+  border-radius: 3px;
+
+  color: white;
+}
+
+button:not(.toolbutton):not(.pickerbutton):hover,
+button:not(.toolbutton):not(.pickerbutton):focus {
+  background-color: var(--navy);
+
+}
+
+button.disabled {
+  background-color: var(--light-blue);
+}
+
+.pickerbutton,
+div.picker {
+  background: #EFEFEF;
+}

@@ -1,7 +1,7 @@
-base     argon
+base     argon-umanit
 author   Anchit
 email    ab@abifog.com
 date     2020-07-11
-name     Argon Template
-desc     Argon - clean, responsive, modern template for Dokuwiki.
-url      https://www.dokuwiki.org/template:argon
+name     Argon UmanIT Template
+desc     UmanIT
+url      https://www.dokuwiki.org/template:argon-umanit

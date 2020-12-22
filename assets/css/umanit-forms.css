@@ -1,0 +1,12 @@
+/*=========== Forms  ==========*/
+
+legend {
+  font-style: normal;
+}
+
+input,
+select {
+  background-color: white !important;
+  border-radius: 0.25rem;
+  border-color: #99979c;
+}

@@ -1,0 +1,85 @@
+/*=========== Dokuwiki content  ==========*/
+
+.dokuwiki .secedit {
+  position: relative;
+  z-index: 1;
+}
+
+#dokuwiki__content a:not(.wikilink2) {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+#dokuwiki__content a:not(.wikilink2):hover,
+#dokuwiki__content a:not(.wikilink2):focus {
+  background: var(--yellow);
+}
+
+#dokuwiki__content .section_highlight {
+  position: relative;
+
+}
+
+#dokuwiki__content .section_highlight:before {
+  content:"";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  border: 1px dashed grey;
+}
+
+#dokuwiki__content a.wikilink2 {
+  color: var(--valencia);
+}
+
+#dokuwiki__content .editButtons button {
+   margin-top: 1em;
+   margin-bottom: 1em;
+  position: relative;
+  z-index: 1;
+ }
+
+#dokuwiki__content :not(pre) > code {
+  background-color: inherit;
+  padding: .1em;
+  border-radius: .3em;
+}
+
+#dokuwiki__content img.icon {
+  width: auto;
+  height: 1rem;
+}
+
+#dokuwiki__content .table-responsive, #dokuwiki__content table {
+  border-width: 0rem;
+}
+
+#dokuwiki__content pre {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: #f5f7ff;
+  color: var(--grey-dark);
+  border: 0;
+  border-radius: .55rem;
+  padding: 1.25rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+#dokuwiki__content .mf_pdf {
+  display: inline;
+}

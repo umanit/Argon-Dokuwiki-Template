@@ -1,0 +1,70 @@
+/*=========== Sidebar  ==========*/
+
+.leftsidebar li {
+  list-style-type: none;
+  display: block;
+  font-size: 0.84rem;
+  padding: 0.25rem 0 0.25rem 0.25rem;
+  color: #4c555a;
+  font-weight: 400;
+}
+
+.leftsidebar a:link,
+.leftsidebar a:visited {
+  text-decoration: none;
+}
+
+.leftsidebar a:link:hover, .leftsidebar a:link:focus,
+.leftsidebar a:visited:hover,
+.leftsidebar a:visited:focus {
+  text-decoration: underline;
+}
+
+.leftsidebar a:hover,
+.leftsidebar a:focus {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.ct-sidebar .nav > li > a, .ct-sidebar .leftsidebar .leftsidebar ul > li > a, .leftsidebar .leftsidebar .ct-sidebar ul > li > a {
+  font-size: 0.84rem;
+}
+
+.ct-sidebar li, .ct-sidebar dd {
+  margin: 0 0 0 0.5em;
+}
+
+.acmenu ul.idx ul {
+  padding-left: 0;
+}
+
+.acmenu ul.idx li > .li a {
+  position: relative;
+  display: block;
+  padding: 0 15px 0 0;
+}
+
+.acmenu ul.idx li.closed > .li a::after, .acmenu ul.idx li.open > .li a::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--blue);
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform-origin: top;
+  transform: translateY(-50%);
+  transition: transform 200ms linear;
+}
+
+.acmenu ul.idx li.open > .li a::after {
+  transform: rotate(90deg) translateY(-50%);
+}
+
+.addnewpage {
+  padding: 10px;
+}

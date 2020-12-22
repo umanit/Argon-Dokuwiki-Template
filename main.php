@@ -43,7 +43,7 @@ $showIcon = tpl_getConf('showIcon');
 		<!--     Fonts and icons  -->
 		<link href="<?php echo tpl_basedir(); ?>assets/css/fonts.css" rel="stylesheet">
 		<!-- CSS Files -->
-		<link href="<?php echo tpl_basedir(); ?>assets/css/doku.css" rel="stylesheet" />
+		<link href="<?php echo tpl_basedir(); ?>assets/css/umanit.css" rel="stylesheet" />
 
 
 	</head>
@@ -66,7 +66,7 @@ $showIcon = tpl_getConf('showIcon');
 						// display logo and wiki title in a link to the home page
 						tpl_link(
 							wl(),
-							'<img src="'.$logo.'" width="30px" alt="" /> <span>'.$conf['title'].'</span>',
+							'<img src="'.$logo.'" width="140px" alt="" /> <span>'.$conf['title'].'</span>',
 							'accesskey="h" title="[H]"'
 						);
 						?>

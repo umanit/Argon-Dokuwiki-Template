@@ -173,12 +173,12 @@ sup {
 }
 
 a {
-  color: #5e72e4;
+  color: var(--navy);
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #233dd2;
+  color: var(--navy);
   text-decoration: none;
 }
 
