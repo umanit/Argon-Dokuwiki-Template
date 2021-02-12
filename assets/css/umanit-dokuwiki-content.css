@@ -18,7 +18,7 @@
 
 #dokuwiki__content .page a:hover,
 #dokuwiki__content .page a:focus {
-  border-bottom: 2px solid var(--yellow);
+  border-color: var(--yellow);
 }
 
 #dokuwiki__content .section_highlight {
@@ -35,6 +35,12 @@
 
 #dokuwiki__content a.wikilink2 {
   color: var(--valencia);
+}
+
+#dokuwiki__content a.wikilink2:hover,
+#dokuwiki__content a.wikilink2:focus {
+  border-bottom-color: currentColor;
+  border-bottom-style: dashed;
 }
 
 #dokuwiki__content .editButtons button {
