@@ -1,0 +1,6 @@
+/*=========== Media Manager  ==========*/
+
+#mediamanager__page .namespaces h2::before,
+#mediamanager__page .panelHeader h3::before {
+  display: none;
+}

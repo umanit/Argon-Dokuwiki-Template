@@ -17,6 +17,9 @@
 @import url(umanit-types.css);
 @import url(umanit-sidebar.css);
 @import url(umanit-footer.css);
+@import url(umanit-mediamanager.css);
+@import url(umanit-code.css);
+@import url(umanit-tables.css);
 
 
 ::-moz-selection {
@@ -319,6 +322,10 @@ textarea {
 
 button {
   border: none;
+}
+
+button + button {
+  margin-left: 10px;
 }
 
 button:hover,

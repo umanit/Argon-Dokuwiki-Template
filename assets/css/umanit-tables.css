@@ -1,0 +1,14 @@
+/*=========== Tables  ==========*/
+
+.table thead th {
+  vertical-align: middle;
+}
+
+.table th {
+  background: var(--light-grey);
+  color: var(--grey-dark);
+}
+
+.table th, .table td {
+  padding: 0.5rem;
+}

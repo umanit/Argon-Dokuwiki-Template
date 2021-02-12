@@ -34,6 +34,15 @@
   margin: 0 0 0 0.5em;
 }
 
+.ct-toc-item.active > .ct-toc-link,
+.ct-toc-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: black;
+  margin: 1.5rem 0 0.3rem;
+}
+
 .acmenu ul.idx ul {
   padding-left: 0;
 }
@@ -44,7 +53,22 @@
   padding: 0 15px 0 0;
 }
 
-.acmenu ul.idx li.closed > .li a::after, .acmenu ul.idx li.open > .li a::after {
+
+.acmenu ul.idx li.closed > .li > a,
+.acmenu ul.idx li.open > .li > a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.acmenu ul.idx li.closed > .li a,
+.acmenu ul.idx li.open > .li a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+.acmenu ul.idx li.closed > .li a::after,
+.acmenu ul.idx li.open > .li a::after {
   content: "";
   display: inline-block;
   width: 0;

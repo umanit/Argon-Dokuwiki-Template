@@ -1,0 +1,6 @@
+/*=========== Code  ==========*/
+
+#dokuwiki__content pre * {
+  text-decoration: none;
+  border-bottom: none !important;
+}
