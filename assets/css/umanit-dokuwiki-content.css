@@ -10,9 +10,12 @@
 }
 
 #dokuwiki__content .page a {
-  display: inline-block;
   color: var(--navy);
   text-decoration: none;
+}
+
+#dokuwiki__content .page a:not(.media) {
+  display: inline-block;
   border-bottom: 1px solid currentColor;
 }
 

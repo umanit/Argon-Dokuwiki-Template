@@ -1,0 +1,24 @@
+/*=========== Admin  ==========*/
+
+.dokuwiki div.ui-admin ul.admin_tasks {
+  float: none;
+  width: initial;
+}
+
+#dokuwiki__content ul.admin_tasks a {
+  border : none;
+}
+
+#dokuwiki__content ul.admin_tasks a:hover,
+#dokuwiki__content ul.admin_tasks a:focus {
+  text-decoration: underline;
+}
+
+.dokuwiki div.ui-admin ul.admin_tasks li {
+  margin-bottom: 10px;
+}
+
+.dokuwiki div.ui-admin ul li a span.icon {
+  height: initial;
+  min-height: initial;
+}
